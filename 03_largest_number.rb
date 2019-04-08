@@ -16,19 +16,29 @@
 # 
 # Examples - what if both numbers are equal or are strings?
 
-def largest_number (number_1, number_2)
+def largest_number (n1, n2)
   # Your code here
   # if number_1 > number_2
   #   puts number_1
   # elsif number_1 < number_2
   #   puts number_2
   # elsif number_1 == number_2
-  #   puts "equal"
+  #   puts number1
   # end
-  puts [number_1,number_2].max
+  
+  # puts [n1,n2].max => avoid using max at this stage
+
+  (n1 >= n2) ? n1 : n2
 end
 
-largest_number(100,50)
-largest_number(10,20)
-largest_number(10,10)
+puts "Please enter number 1:"
+n1 = gets.to_i
+puts "Please enter number 2:"
+n2 = gets.to_i
+puts "Please enter number 3:"
+n3 = gets.to_i
+
+# largest_number(100,50)
+# largest_number(10,20)
+# largest_number(10,10)
 # largest_number(a,b)
