@@ -18,6 +18,17 @@
 
 def largest_number (number_1, number_2)
   # Your code here
+  # if number_1 > number_2
+  #   puts number_1
+  # elsif number_1 < number_2
+  #   puts number_2
+  # elsif number_1 == number_2
+  #   puts "equal"
+  # end
+  puts [number_1,number_2].max
 end
 
 largest_number(100,50)
+largest_number(10,20)
+largest_number(10,10)
+# largest_number(a,b)
