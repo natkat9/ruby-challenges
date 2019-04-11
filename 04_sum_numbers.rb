@@ -12,6 +12,14 @@
 
 def sum_numbers (numbers)
   # Your code here
+  # using sum method:
+  # numbers.sum
+  # using loop:
+  sum = 0
+  numbers.each do |x|
+    sum = sum + x
+  end
+  return sum
 end
 
 

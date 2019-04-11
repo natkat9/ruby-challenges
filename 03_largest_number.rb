@@ -18,27 +18,30 @@
 
 def largest_number (n1, n2)
   # Your code here
-  # if number_1 > number_2
-  #   puts number_1
-  # elsif number_1 < number_2
-  #   puts number_2
-  # elsif number_1 == number_2
-  #   puts number1
-  # end
+  if (n1.is_a?(String) | n2.is_a?(String))
+    puts "Invalid entry"
+  else
+    if n1 >= n2
+      return n1
+    else
+      return n2
+    end
+  end
   
-  # puts [n1,n2].max => avoid using max at this stage
+  # (n1 >= n2) ? n1 : n2 # => Above as turnary
 
-  (n1 >= n2) ? n1 : n2
+  # puts [n1,n2].max # => Janel said to avoid using max at this stage
+
 end
 
-puts "Please enter number 1:"
-n1 = gets.to_i
-puts "Please enter number 2:"
-n2 = gets.to_i
-puts "Please enter number 3:"
-n3 = gets.to_i
+# puts "Please enter number 1:"
+# n1 = gets.to_i
+# puts "Please enter number 2:"
+# n2 = gets.to_i
+# puts "Please enter number 3:"
+# n3 = gets.to_i
 
-# largest_number(100,50)
-# largest_number(10,20)
-# largest_number(10,10)
-# largest_number(a,b)
+puts largest_number(100,50)
+puts largest_number(10,20)
+puts largest_number(10,10)
+puts largest_number("a","b")
