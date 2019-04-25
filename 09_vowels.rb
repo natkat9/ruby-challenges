@@ -12,4 +12,6 @@
 
 def vowels (string)
   # Your code here
+  vowels = []
+  letters = string.split("")
 end
