@@ -10,11 +10,13 @@
 # Check your solution by running the tests:
 # ruby tests/04_sum_numbers_test.rb
 
+# using sum method:
+# def sum_numbers (numbers)
+#   number.sum
+# end
+
+# using loop:
 def sum_numbers (numbers)
-  # Your code here
-  # using sum method:
-  # numbers.sum
-  # using loop:
   sum = 0
   numbers.each do |x|
     sum = sum + x
@@ -22,6 +24,11 @@ def sum_numbers (numbers)
   return sum
 end
 
+# TEST
+# puts sum_numbers([1,1,1])         # => should return 3
+# puts sum_numbers([5,2,100,0,10])  # => should return 117
+# puts sum_numbers([])                # => returns 0
+# puts sum_numbers(["a","b"])         # => returns Error: String can't be coerced into Integer
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
