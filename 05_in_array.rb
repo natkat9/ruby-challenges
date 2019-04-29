@@ -14,7 +14,12 @@
 # "hello", ["hi","howdy","hello"] should return true.
 
 def in_array (needle, haystack)
-  # Your code here
+  haystack.each do |value|
+    if value == needle
+      return true
+    end
+  end
+  return false
 end
 
 
