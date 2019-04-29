@@ -12,7 +12,18 @@
 
 
 # Your code here
+def count_words(words)
+    # words = text.downcase.split(" ")
+    frequencies = Hash.new(0)
+    words.downcase.split.each do |word|
+        frequencies[word] += 1
+    end
+    frequencies.each do |word, frequency|
+        puts word + " " + frequency.to_s
+    end
+end
 
+count_words("hi hi Hi hello 1 1")
 
 # Beast Mode:
 # Change your code so that it doesn't matter if capital letters are used,

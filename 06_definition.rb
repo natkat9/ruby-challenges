@@ -15,5 +15,15 @@
 # ruby tests/06_definition_test.rb
 
 class Definition
-# Your code here
+
+    def add_word (word, definition)
+        definition = 
+    end
+
+    def lookup (word)
+    end
+
+    def total_words
+    end
+
 end
